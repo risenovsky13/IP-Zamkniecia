@@ -26,6 +26,69 @@ function App() {
 				terminal_1="SIX"
 				terminal_2="LOYAL"
 			></Form>
+			<Form
+				city="KRAKÓW I"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="KRAKÓW II"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="KRAKÓW III"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="ŁÓDŹ"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="POZNAŃ"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="SOPOT"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="WARSZAWA I"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="WARSZAWA II"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
+			<Form
+				city="WROCŁAW"
+				supervisor="Kasia sefbef"
+				assistant="Talent Barmański"
+				terminal_1="SIX"
+				terminal_2="LOYAL"
+			></Form>
 		</>
 	);
 }

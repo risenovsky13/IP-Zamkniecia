@@ -20,13 +20,11 @@ function Form(props) {
 	const handleCustomInput = (event) => {
 		const value = event.target.value;
 		setCustomSupervisor(value);
-	}
+	};
 
-	const onFocusInput = () =>{
+	const onFocusInput = () => {
 		setSupervisor("");
-	}
-
-	
+	};
 
 	return (
 		<>
@@ -75,14 +73,20 @@ function Form(props) {
 							</select>
 						</div>
 
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
-						<input type="number" step={0.01}/>
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+						<input type="number" step={0.01} />
+					</div>
+
+					<div className={styles.buttons}>
+						<button className={styles.sms_btn}>SMS</button>
+						<button className={styles.reset_btn}>RESET</button>
+						<button className={styles.toggle_btn}>CLOSE</button>
 					</div>
 				</div>
 			</div>
