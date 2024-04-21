@@ -8,6 +8,8 @@ import { useState } from "react";
 function Form(props) {
 	var [selectedSupervisor, setSupervisor] = useState("");
 	var [customSupervisor, setCustomSupervisor] = useState("");
+	var [currentDate, setCurrentDate] = useState("DD/MM");
+	var [userValue, setUserValue] = useState("");
 
 	const handleChange = (event) => {
 		const value = event.target.value;
@@ -58,12 +60,22 @@ function Form(props) {
 					</div>
 
 					<div className={styles.value_inputs}>
-
-				<div className={styles.date_row}>
-						<input type="date" className={styles.date_input}  />
-						<input type="time" className={styles.time_input} />
-				</div>
-
+						<div className={styles.date_row}>
+							<input
+								type="text"
+								className={styles.date_manual}
+								placeholder={currentDate}
+								value={userValue}
+								onChange={(e) => setCurrentDate(e.target.value)}
+							/>
+							<input
+								type="date"
+								className={styles.date_input}
+								value={userValue}
+								onChange={(e) => setUserValue(e.target.value)}
+							/>
+							<input type="time" className={styles.time_input} />
+						</div>
 
 						<div className={styles.supervisor_row}>
 							<input
