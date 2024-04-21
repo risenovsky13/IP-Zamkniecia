@@ -1,4 +1,6 @@
 ﻿/* eslint-disable react/prop-types */
+// import IndicatorComponent from "./assets/indicator/IndicatorComponent";
+import IndicatorComponent from "./assets/indicator/IndicatorComponent";
 import styles from "./Form.module.css";
 import { useState } from "react";
 
@@ -29,10 +31,21 @@ function Form(props) {
 	return (
 		<>
 			<div className={styles.form_container}>
-				<h2 className={styles.city}>{props.city}</h2>
+				<div className={styles.header_container}>
+					<div className={styles.indicator_placeholder}>
+						<IndicatorComponent></IndicatorComponent>
+					</div>
+
+					<div className={styles.city_placeholder}>
+						<div className={styles.city_align}>
+							<h2 className={styles.city}>{props.city}</h2>
+						</div>
+					</div>
+				</div>
 
 				<div className={styles.input_container}>
 					<div className={styles.value_names}>
+						<p>DATA</p>
 						<p>KIER.</p>
 						<p>{props.terminal_1}</p>
 						<p>{props.terminal_2}</p>
@@ -45,6 +58,13 @@ function Form(props) {
 					</div>
 
 					<div className={styles.value_inputs}>
+
+				<div className={styles.date_row}>
+						<input type="date" className={styles.date_input}  />
+						<input type="time" className={styles.time_input} />
+				</div>
+
+
 						<div className={styles.supervisor_row}>
 							<input
 								type="text"

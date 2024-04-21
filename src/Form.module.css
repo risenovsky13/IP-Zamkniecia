@@ -1,16 +1,16 @@
 ﻿.form_container {
-	width: 260px;
-	height: 440px;
+	width: 270px;
+	height: 460px;
 	/* border: 1px solid red; */
 	border-radius: 15px;
 	display: inline-block;
 	text-align: center;
 	margin: 20px;
 
-	box-shadow: 5px 5px 20px hsla(0, 0%, 0%, 0.8),
-		inset -15px -15px 60px hsla(0, 0%, 0%, 0.4),
-		-5px -5px 20px hsl(0, 0%, 100%, 0.2),
-		inset 15px 15px 60px hsl(0, 0%, 80%, 0.1);
+	background: #242424;
+
+	box-shadow: 15px 15px 30px hsla(0, 0%, 7%, 0.8),
+		-15px -15px 30px hsla(0, 0%, 21%, 0.8);
 }
 
 .value_names {
@@ -27,61 +27,86 @@
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
+	flex-direction: column;
 }
 
 .input_container {
 	width: 100%;
-	overflow: hidden;
-	height: 82%;
+	height: 80%;
 	text-align: left;
 	/* border: 1px yellow solid; */
 }
 
-.supervisor {
-	width: 30px;
-	height: 22px;
-	background-color: hsl(0, 0%, 29%);
-	color: aliceblue;
-	border-radius: 5px;
-	display: inline-block;
-	border: none;
-	padding: 0;
-}
-
-.supervisor:hover{
+.supervisor:hover {
 	cursor: pointer;
 }
 
 p {
+	color: aquamarine;
 	margin: 0;
-	padding-top: 1px;
-	font-size: 20px;
-	margin-top: 9px;
-	padding-left: 5px;
+	padding: 0;
+	text-decoration: none;
+	font-size: 17px;
+	text-emphasis: none;
+	padding-left: 15px;
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+/* input:focus {
+
+} */
+
+input {
+	box-shadow: inset -3px -3px 6px hsl(0, 0%, 19%),
+		inset 3px 3px 6px hsl(0, 0%, 9%);
 }
 
 input {
-	border: 1px hsl(0, 0%, 29%) solid;
+	color: aquamarine;
+	outline: none;
+	border: none;
+	margin: 0;
 	width: 92%;
 	border-radius: 5px;
-	background-color: hsl(0, 0%, 29%);
-	color: aliceblue;
-	height: 18px;
-	margin: 0;
-	margin-top: 8px;
-	margin-bottom: 3px;
+	background-color: hsl(0, 0%, 14%);
+	height: 18.06px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.date_row {
+	box-sizing: border-box;
+	margin-bottom: 10px;
 }
 
 .supervisor_row {
-	width: 156px;
-	text-align: start;
-	/* border: 1px green solid; */
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.supervisor {
+	width: 15%;
+	height: 21px;
+	background-color: hsl(0, 0%, 14%);
+	color: aquamarine;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	margin-left: 5px;
+	box-shadow: inset -3px -3px 6px hsl(0, 0%, 19%),
+		inset 3px 3px 6px hsl(0, 0%, 9%);
 }
 
 #supervisor_input {
-	width: 7.5em;
+	margin-bottom: 0;
+	max-width: 73%;
 	display: inline;
-	margin-right: 12px;
 }
 input[type="number"] {
 	-webkit-appearance: textfield;
@@ -103,20 +128,94 @@ input[type="number"]::-webkit-outer-spin-button {
 .reset_btn,
 .toggle_btn {
 	border: none;
-	border: 1px aliceblue solid;
-	margin-top: 30px;
+	margin-top: 15px;
 	width: 25%;
-	height: 25px;
-	border-radius: 50px;
-	margin-left: 5px;
-	margin-right: 5px;
+	height: 35px;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 	background-color: hsl(0, 0%, 14%);
-	color: aliceblue;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+	transition-duration: 250ms;
+	transition-property: drop-shadow;
+
+	color: aquamarine;
+
+	box-shadow: 3px 3px 6px hsl(0, 0%, 9%), -3px -3px 6px hsl(0, 0%, 19%);
 }
 
 .sms_btn:hover,
 .reset_btn:hover,
 .toggle_btn:hover {
-	background-color: hsl(0, 0%, 24%);
+	transition-duration: 150ms;
+	transition-property: box-shadow;
+	box-shadow: 3px 3px 6px hsl(0, 0%, 9%), -3px -3px 6px hsl(0, 0%, 19%),
+		inset -3px -3px 6px hsl(0, 0%, 9%), inset 3px 3px 6px hsl(0, 0%, 19%);
+
 	cursor: pointer;
+}
+
+.sms_btn:active,
+.reset_btn:active,
+.toggle_btn:active {
+	box-shadow: inset 3px 3px 6px hsl(0, 0%, 9%),
+		inset -3px -3px 6px hsl(0, 0%, 19%);
+}
+
+.date_input {
+	margin: 0;
+	width: 55%;
+	display: inline;
+	cursor: pointer;
+	display: inline;
+	height: 18.06px;
+}
+
+.time_input {
+	margin: 0;
+	border: none;
+	width: 30%;
+	display: inline;
+	height: 18.06px;
+	display: inline-block;
+	border: none;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.header_container {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	display: flex;
+	text-align: left;
+	/* outline: 1px rgba(255, 255, 0, 0.651) solid; */
+
+	padding-left: 15px;
+	padding-top: 15px;
+
+	margin-bottom: 23px;
+}
+
+.indicator_placeholder {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.city_placeholder {
+	height: 50px;
+	width: 100vw;
+	display: inline-block;
+}
+/* .city_align{
+
+} */
+
+.city {
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 0;
 }

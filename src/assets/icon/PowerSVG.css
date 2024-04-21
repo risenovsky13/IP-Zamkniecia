@@ -1,0 +1,6 @@
+﻿.power_icon{
+    width: 50px;
+    stroke: hsl(172, 100%, 50%);
+    filter: drop-shadow(0 0 5px hsl(172, 100%, 50%));
+    
+}

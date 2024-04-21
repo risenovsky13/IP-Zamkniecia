@@ -1,0 +1,25 @@
+﻿.indicator-outter {
+	box-shadow: 3px 3px 6px hsl(0, 0%, 9%), -3px -3px 6px hsl(0, 0%, 19%);
+}
+
+.indicator-outter,
+.indicator-inner {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.indicator-inner {
+	width: 40px;
+	height: 40px;
+
+    border-radius: 5px;
+
+    box-shadow: inset 2px 2px 6px hsl(0, 0%, 11%), inset -2px -2px 6px hsl(0, 0%, 17%);
+}
+.indicator-holder {
+	display: inline-block;
+}
